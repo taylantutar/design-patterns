@@ -13,3 +13,11 @@ var url = new UrlBuilder("https://abc.com")
     .Build();
 
 Console.WriteLine(url);
+
+var url2 = new UrlBuilder("https://abc.com")
+    .AddParameter("api")
+    .AddParameter("v1")
+    .AddParameter("Product")
+    .Build();
+
+Console.WriteLine(url2);
