@@ -41,12 +41,8 @@ namespace builder
         {
             var qparameter = sbUrl.ToString();
 
-            System.Console.WriteLine(qparameter);
-
             if (qparameter[^1] == '&')
                 qparameter = qparameter[0..(qparameter.Length - 1)];
-
-            System.Console.WriteLine(qparameter);
 
             var url = $"{this.BaseUrl}{qparameter}";
 
